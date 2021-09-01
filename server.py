@@ -49,16 +49,13 @@ def shell():
 					hh.write(imagestr)
 					print imagestr
 					hh.close()
-					print "11"
 					image_dec = base64.b64decode(imagestr)
 					print image_dec
-					print "12"
 					if image_dec[:4] == "[!!]":
 						print(image_dec)
 					else:
 						screen.write(image_dec)
 						count += 1
-						print "jjjj"
 			except TypeError:
 				print("FAiled")
 
